@@ -19,11 +19,11 @@ El método Runge–Kutta de orden 4 (RK4) estima la solución de du/dt = f(t, u)
 
 Ecuación de actualización (paso dt):
 
-k1 = f(t, u)
-k2 = f(t + dt/2, u + dt*k1/2)
-k3 = f(t + dt/2, u + dt*k2/2)
-k4 = f(t + dt,   u + dt*k3)
-u_next = u + (dt/6) * (k1 + 2*k2 + 2*k3 + k4)
+- k1 = f(t, u)
+- k2 = f(t + dt/2, u + dt*k1/2)
+- k3 = f(t + dt/2, u + dt*k2/2)
+- k4 = f(t + dt,   u + dt*k3)
+- u_next = u + (dt/6) * (k1 + 2*k2 + 2*k3 + k4)
 
 # Tecnologías utilizadas
 
@@ -63,7 +63,7 @@ Simulador-Balistico/
 - actualizar_sliders(...) — lógica para mostrar sliders o inputs según munición
 
 # Demostración visual — Cómo inicializar Streamlit
-1) Instalar dependencias (entorno virtual recomendado)
+1- Instalar dependencias (entorno virtual recomendado)
 python -m venv .venv
 source .venv/bin/activate       # Linux / macOS
 #.venv\Scripts\activate       # Windows PowerShell
