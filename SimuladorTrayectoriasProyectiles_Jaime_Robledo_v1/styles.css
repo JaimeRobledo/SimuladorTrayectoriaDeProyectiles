@@ -1,0 +1,103 @@
+/* Fondo y colores principales */
+    .main {
+        background-color: #0a0e1a;
+    }
+    
+    /* Títulos */
+    h1 {
+        color: #e8eaed;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 20px 0;
+        border-bottom: 3px solid #2d5a3d;
+    }
+    
+    h3 {
+        color: #b8bcc2;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    
+    /* Cajas de métricas */
+    .metric-box {
+        background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+        border-left: 4px solid ;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .metric-title {
+        color: #8a9099;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+    
+    .metric-value-1 {
+        color: #ff0000;
+        font-size: 1.8rem;
+        font-weight: 700;
+        font-family: 'Courier New', monospace;
+    }
+            
+    .metric-value-2 {
+        color: #4fe431;
+        font-size: 1.8rem;
+        font-weight: 700;
+        font-family: 'Courier New', monospace;
+    }
+    
+    /* Sección de parámetros */
+    .param-section {
+        background: linear-gradient(135deg, #131920 0%, #0d1117 100%);
+        border-radius: 10px;
+        padding: 25px;
+        margin: 15px 0;
+        border: 1px solid #2d3748;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    }
+    
+    .section-header {
+        color: #e8eaed;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #2d5a3d;
+    }
+    
+    /* Etiquetas de sliders */
+    .stSlider > label {
+        color: #b8bcc2 !important;
+        font-weight: 500;
+    }
+    
+    /* Selectbox */
+    .stSelectbox > label {
+        color: #b8bcc2 !important;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    /* Logo container */
+    .logo-container {
+        text-align: center;
+        padding: 20px 0;
+        background: linear-gradient(180deg, #0f1419 0%, #0a0e1a 100%);
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    /* Divisor */
+    .divider {
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #2d5a3d, transparent);
+        margin: 30px 0;
+    }
+
+    
