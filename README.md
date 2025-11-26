@@ -156,6 +156,6 @@ Bienvenidas: ampliar físicas (viento, Magnus, Coriolis), exportar resultados, a
 
 # Autor
 
-Jaime Robledo
-Estudiante de Ingeniería de Software y Matemáticas
+Jaime Robledo, 
+Estudiante de Ingeniería de Software y Matemáticas, 
 Desarrollador del proyecto Simulador Balístico.
