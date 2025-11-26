@@ -1,6 +1,6 @@
 # Simulador de Trayectoria de Proyectiles
 
-Este proyecto implementa un simulador interactivo que calcula la trayectoria realista de un proyectil en 2D considerando gravedad, densidad del aire dependiente de la altitud, arrastre aerodinámico, coeficiente balístico, tipo de munición, velocidad inicial y altura inicial.
+Este proyecto implementa un simulador interactivo que calcula la trayectoria realista de un proyectil en 2D considerando la masa del proyectil, densidad del aire, arrastre aerodinámico, diámetro del proyectil, ángulo del cual se lanza, tipo de munición, velocidad inicial y altura inicial.
 Incluye una interfaz con sliders dinámicos, cálculo automático de parámetros y visualización mediante Matplotlib y Streamlit.
 
 # Características principales
