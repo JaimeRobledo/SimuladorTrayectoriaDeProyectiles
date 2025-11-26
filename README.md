@@ -1,9 +1,9 @@
-Simulador de Trayectoria de Proyectiles
+#Simulador de Trayectoria de Proyectiles
 
 Este proyecto implementa un simulador interactivo que calcula la trayectoria realista de un proyectil en 2D considerando gravedad, densidad del aire dependiente de la altitud, arrastre aerodinámico, coeficiente balístico, tipo de munición, velocidad inicial y altura inicial.
 Incluye una interfaz con sliders dinámicos, cálculo automático de parámetros y visualización mediante Matplotlib y Streamlit.
 
-Características principales
+#Características principales
 
 Trayectoria con física real: integración numérica de las ecuaciones de movimiento (pos. y vel.), arrastre dependiente de velocidad y densidad.
 
@@ -11,13 +11,11 @@ Densidad del aire dinámica: modelo exponencial p = p0 * e^(-y / 8500).
 
 Cálculo automático del ángulo para impactar un objetivo (función iterativa de búsqueda de ángulo).
 
-Radio de impacto / onda expansiva: opción visual basada en energía cinética (equivalente TNT visual) y banda/círculo de impacto.
-
 Interfaz interactiva con sliders o inputs automáticos según munición (Streamlit + ipywidgets opcional para notebooks).
 
 Visualización profesional con Matplotlib integrada en Streamlit.
 
-Tecnologías utilizadas
+#Tecnologías utilizadas
 
 Python 3
 
@@ -31,7 +29,7 @@ ipywidgets (opcional para Jupyter)
 
 (Opcional) Módulo personalizado ammo.py
 
-Estructura del proyecto
+#Estructura del proyecto
 Simulador-Balistico/
 │
 ├── main.py                    # App principal Streamlit (o app.py según prefieras)
@@ -47,7 +45,7 @@ Simulador-Balistico/
 
 Nota: Si guardas styles.css en assets/, adapta la lógica de carga; el README asume que styles.css está en el mismo nivel que main.py.
 
-Funciones principales (resumen)
+#Funciones principales (resumen)
 
 densidad_atmosfera(y)
 
@@ -57,11 +55,9 @@ calcular_resistencia_aire(...) — solver RK4 (devuelve arrays de x,y y velocida
 
 objetivoPedido(...) — busca ángulo para impactar un X dado
 
-calcular_radio_impacto(...) — radio visual de onda/efecto (varias opciones: acústica o equivalente TNT)
-
 actualizar_sliders(...) — lógica para mostrar sliders o inputs según munición
 
-Cómo funciona RK4 (breve)
+#Cómo funciona RK4 (breve)
 
 El método Runge–Kutta de orden 4 (RK4) estima la solución de du/dt = f(t, u) con cuatro evaluaciones intermedias por paso (k1..k4) y combina estas para obtener u_next. Para el sistema [x, y, vx, vy] esto permite integrar con alta precisión fuerzas no lineales (drag dependiente de v², densidad variable, etc.).
 
@@ -73,7 +69,7 @@ k3 = f(t + dt/2, u + dt*k2/2)
 k4 = f(t + dt,   u + dt*k3)
 u_next = u + (dt/6) * (k1 + 2*k2 + 2*k3 + k4)
 
-Demostración visual — Cómo inicializar Streamlit
+#Demostración visual — Cómo inicializar Streamlit
 1) Instalar dependencias (entorno virtual recomendado)
 python -m venv .venv
 source .venv/bin/activate       # Linux / macOS
@@ -123,7 +119,6 @@ Trayectoria ideal (vacío).
 
 Punto de impacto, altura máxima.
 
-(Opcional) Zona de impacto mostrada como círculo relleno o banda en el suelo.
 
 Panel final con métricas: alcance, altura máxima, tiempo de vuelo, energía cinética al impacto, y comparativa entre real y teórico.
 
@@ -137,7 +132,7 @@ altura = 0
 
 Estos valores producen la gráfica de la trayectoria y las métricas mostradas en la interfaz.
 
-Estilos CSS
+#Estilos CSS
 
 Si usas styles.css junto a main.py, aplica en la parte superior de main.py:
 
@@ -152,7 +147,7 @@ if css_path.exists():
 
 Esto hace que todas las clases CSS que uses en st.markdown(..., unsafe_allow_html=True) (p. ej. .metric-box, .section-header) se apliquen correctamente.
 
-Cómo ejecutar en Jupyter (opcional)
+#Cómo ejecutar en Jupyter (opcional)
 
 Instala dependencias y abre el notebook:
 
@@ -162,11 +157,12 @@ jupyter notebook  # o jupyter lab
 
 Abre simulador.ipynb y ejecuta las celdas. (Si usas widgets, activa la extensión de widgets si es necesario).
 
-Contribuciones
+#Contribuciones
 
 Bienvenidas: ampliar físicas (viento, Magnus, Coriolis), exportar resultados, añadir comparador de municiones, mejorar performance (numba), migrar a una versión 3D, etc. Haz fork y pull request.
 
-Autor
+#Autor
 
 Jaime Robledo
 Estudiante de Ingeniería de Software y Matemáticas
+Desarrollador del proyecto Simulador Bal
