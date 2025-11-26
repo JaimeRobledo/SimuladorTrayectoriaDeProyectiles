@@ -39,11 +39,9 @@ Simulador-Balistico/
 ├── README.md
 └── assets/
     ├── Logo_Simulador_Proyectiles.png
-    └── capturas/
-        └── ejemplo_plot.png
+    
 
 
-Nota: Si guardas styles.css en assets/, adapta la lógica de carga; el README asume que styles.css está en el mismo nivel que main.py.
 
 # Funciones principales (resumen)
 
