@@ -63,7 +63,7 @@ Simulador-Balistico/
 - actualizar_sliders(...) — lógica para mostrar sliders o inputs según munición
 
 # Demostración visual — Cómo inicializar Streamlit
-1- Instalar dependencias (entorno virtual recomendado)
+- Instalar dependencias (entorno virtual recomendado)
 python -m venv .venv
 source .venv/bin/activate       # Linux / macOS
 #.venv\Scripts\activate       # Windows PowerShell
@@ -75,7 +75,7 @@ pip install streamlit numpy matplotlib
 
 Si usas ipywidgets dentro de Jupyter: pip install ipywidgets (opcional).
 
-2) Ejecutar la app Streamlit
+- Ejecutar la app Streamlit
 
 Desde la raíz del proyecto (donde está main.py y styles.css):
 
@@ -90,7 +90,7 @@ Network URL: http://192.168.x.x:8501
 
 Abre http://localhost:8501 en tu navegador.
 
-3) Qué esperar en la interfaz
+- Qué esperar en la interfaz
 
 Encabezado con logo y título.
 
