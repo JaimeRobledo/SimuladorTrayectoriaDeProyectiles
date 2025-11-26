@@ -9,51 +9,9 @@ Trayectoria con física real: integración numérica de las ecuaciones de movimi
 
 Densidad del aire dinámica: modelo exponencial p = p0 * e^(-y / 8500).
 
-Cálculo automático del ángulo para impactar un objetivo (función iterativa de búsqueda de ángulo).
-
 Interfaz interactiva con sliders o inputs automáticos según munición (Streamlit + ipywidgets opcional para notebooks).
 
 Visualización profesional con Matplotlib integrada en Streamlit.
-
-# Tecnologías utilizadas
-
--Python 3
-
--Matplotlib
-
--NumPy
-
--Streamlit
-
--ipywidgets (opcional para Jupyter)
-
--(Opcional) Módulo personalizado ammo.py
-
-# Estructura del proyecto
-Simulador-Balistico/
-│
-├── main.py                    # App principal Streamlit (o app.py según prefieras)
-├── simulation.py              # Lógica de simulación (RK4, drag, densidad, etc.)
-├── ammo.py                    # Diccionario de municiones y parámetros
-├── styles.css                 # Estilos CSS a la misma altura que main.py
-├── README.md
-└── assets/
-    ├── Logo_Simulador_Proyectiles.png
-    
-
-
-
-# Funciones principales (resumen)
-
-densidad_atmosfera(y)
-
-f(u, m, g, cd, area, p) — deriva estado [x, y, vx, vy]
-
-calcular_resistencia_aire(...) — solver RK4 (devuelve arrays de x,y y velocidades)
-
-objetivoPedido(...) — busca ángulo para impactar un X dado
-
-actualizar_sliders(...) — lógica para mostrar sliders o inputs según munición
 
 # Cómo funciona RK4 (breve)
 
@@ -66,6 +24,43 @@ k2 = f(t + dt/2, u + dt*k1/2)
 k3 = f(t + dt/2, u + dt*k2/2)
 k4 = f(t + dt,   u + dt*k3)
 u_next = u + (dt/6) * (k1 + 2*k2 + 2*k3 + k4)
+
+# Tecnologías utilizadas
+
+- Python 3
+
+- Matplotlib
+
+- NumPy
+
+- Streamlit
+
+- ipywidgets (opcional para Jupyter)
+
+- (Opcional) Módulo personalizado ammo.py
+
+# Estructura del proyecto
+Simulador-Balistico/
+│
+├── main.py                    # App principal Streamlit (o app.py según prefieras)
+├── simulation.py              # Lógica de simulación (RK4, drag, densidad, etc.)
+├── ammo.py                    # Diccionario de municiones y parámetros
+├── styles.css                 # Estilos CSS a la misma altura que main.py
+├── README.md
+└── assets/
+    ├── Logo_Simulador_Proyectiles.png
+    
+# Funciones principales (resumen)
+
+- densidad_atmosfera(y)
+
+- f(u, m, g, cd, area, p) — deriva estado [x, y, vx, vy]
+
+- calcular_resistencia_aire(...) — solver RK4 (devuelve arrays de x,y y velocidades)
+
+- objetivoPedido(...) — busca ángulo para impactar un X dado
+
+- actualizar_sliders(...) — lógica para mostrar sliders o inputs según munición
 
 # Demostración visual — Cómo inicializar Streamlit
 1) Instalar dependencias (entorno virtual recomendado)
